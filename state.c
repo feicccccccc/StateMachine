@@ -47,7 +47,7 @@ StateTransitionInfoType STATE_2_func(StateTransitionInfoType input_info)
 StateTransitionInfoType STATE_3_func(StateTransitionInfoType input_info)
 {
 	input_info.next_state = STATE_3;
-	input_info.next_frame_count = FRAME_PREAMBLE_COUNT;
+	input_info.next_frame_count = 0;
 	input_info.next_frame_info = 0;
 	return input_info;
 }
@@ -55,7 +55,7 @@ StateTransitionInfoType STATE_3_func(StateTransitionInfoType input_info)
 StateTransitionInfoType STATE_4_func(StateTransitionInfoType input_info)
 {
 	input_info.next_state = STATE_4;
-	input_info.next_frame_count = FRAME_PREAMBLE_COUNT;
+	input_info.next_frame_count = 0;
 	input_info.next_frame_info = 0;
 	return input_info;
 }
@@ -63,8 +63,8 @@ StateTransitionInfoType STATE_4_func(StateTransitionInfoType input_info)
 StateTransitionInfoType STATE_5_func(StateTransitionInfoType input_info)
 {
 	input_info.next_state = STATE_5;
-	input_info.next_frame_count = FRAME_READ_COUNT;
-	input_info.next_frame_info = addr_cache;
+	input_info.next_frame_count = 0;
+	input_info.next_frame_info = 0;
 	return input_info;
 }
 
