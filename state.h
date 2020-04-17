@@ -1,4 +1,4 @@
-// Configuration for the DRIFTs
+// Configuration for the state machine
 // Author: Fei
 
 // This file is used to define the different state in protocol
